@@ -69,7 +69,7 @@ function smrabub(){
   var url = await page.url()
   const Captcha = require('2captcha');
   const solver = new Captcha.Solver('your api key')
-    var cookie = await solver.funCaptcha("your funcaptcha token", url) //2F1CD804-FE45-F12B-9723-240962EBA6F8
+    var cookie = await solver.funCaptcha("your funcaptcha token", url) 
     .then(function(res) {
       // Logs the image tex
       console.log(res.data)
